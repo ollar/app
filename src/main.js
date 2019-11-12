@@ -1,6 +1,7 @@
-class App {
-    _services = {};
-    _lookup() {}
-}
+import App from './app.js';
 
-export default App;
+const app = new App();
+
+app.init();
+
+export default app;
