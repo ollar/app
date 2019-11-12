@@ -1,5 +1,3 @@
-import setAppName from './set-app-name.js';
+import AppName from './set-app-name.js';
 
-export default {
-    setAppName,
-};
+export default [AppName];

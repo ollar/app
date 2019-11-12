@@ -5,14 +5,14 @@ class App {
     _services = {};
     _lookup() {}
 
-    init() {
+    async init() {
         log('App is booting');
 
         // Run initializers
         log('// Run initializers');
-
-        // Run app instance hydration
-        log('// Run app instance hydration');
+        await Promise.all(
+            initializers.map(_initializer => _initializer.init(this))
+        );
     }
 }
 
