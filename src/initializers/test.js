@@ -1,10 +1,3 @@
-import Base from './base.js';
-
-export default Object.assign({}, Base, {
-    _name: 'tests_runner',
-    _type: 'serial',
-
-    init() {
-        console.log('running tests');
-    },
-});
+export default function(app) {
+    // add some init checks here
+}
